@@ -1,3 +1,22 @@
+def bubble_sort(array)
+    swapped = true
+    n = 0
+    array_range = 0...(array.size - 1 - n)
+    while swapped 
+        swapped = false
+        array_range.each do |idx|
+            if array[idx] > array[idx+1]
+                array[idx], array[idx+1] = array[idx+1], array[idx]
+                swapped = true
+            end
+        end
+    n+=1
+    end
+   array
+end
+
+print bubble_sort([4,3,78,2,0,2])
+
 #1. while loop che continua fino a tutti gli elementi non sono nella posizione giusta - (swap_flag = true)?
 #2. Loop sulla lista e comparazione di element[index] e element[index+1]
 #3. Variabile index=0 per tenere conto della posizione degli elementi nella lista
